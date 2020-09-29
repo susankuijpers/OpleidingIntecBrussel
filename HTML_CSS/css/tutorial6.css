@@ -1,0 +1,76 @@
+        li {
+            margin-right: 1rem;
+            color: purple;
+            font-size: larger;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        ul {
+            display: inline-flex;
+            list-style: none;
+        }
+        
+        ul li:hover {
+            color: pink
+        }
+        
+        header {
+            background-color: blueviolet;
+            height: 260px;
+            color: plum;
+            font-size: x-large;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 0rem;
+            margin-bottom: 0rem;
+            border: 1px solid #ccc;
+            border-width: 1px 0;
+            list-style: none;
+            margin: 0;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        section {
+            background-color: rgb(248, 171, 98);
+            font-size: large;
+            color: snow;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid #ccc;
+            border-width: 1px 0;
+            list-style: none;
+            margin: 0;
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        footer {
+            background-color: blueviolet;
+            font-size: small;
+            color: antiquewhite;
+            padding: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        figure {
+            color: blueviolet;
+            font-size: smaller;
+            font-family: system-ui;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        aside {
+            width: 30%;
+            padding-left: 15px;
+            margin-left: 15px;
+            float: right;
+            font-style: italic;
+            background-color: rgb(255, 1, 255);
+            height: 269px;
+            width: 50%;
+            font-family: system-ui;
+            color: rgb(110, 0, 212);
+            padding-left: 2rem;
+            padding-top: 1rem;
+            padding-right: 2rem;
+        }
