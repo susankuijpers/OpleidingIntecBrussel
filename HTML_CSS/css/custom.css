@@ -1,20 +1,25 @@
 div {
-    border: 1px solid;
-    padding: 2rem;
-    background-color: azure;
+    border: 1px solid !important;
+    padding: 2rem !important;
+    background-color: azure !important;
 }
 
 ul {
-    display: inline-flex;
-    list-style: none;
+    display: inline-flex !important;
+    list-style: none !important;
+    margin-right: 1rem !important;
 }
 
 ul#navbar li   {
-    margin-right: 0.5rem;
-    padding: 5px;
+    margin-right: 2px;
 }
 
 ul#navbar li:hover {
-    background-color: yellow;
-    padding: 5px;
+    background-color: yellow !important;
+    margin-right: 3rem !important;
+    padding: 10px !important;
+}
+
+h1 {
+display: inline-flex;
 }
