@@ -7,29 +7,44 @@
     <link rel="stylesheet" href="css/tutorial7.css">
 </head>
 <body>
-    <form action="postdata.php" method="POST" autocomplete="on">
+    <form action="http://localhost/post.php" method="POST" autocomplete="on"><!-- <p>method post is to post something, method get is to get something like with google/p> -->
+        <fieldset>
+            <legend>user login section</legend>
         <h2>REGISTRATION FORM</h2>
         <label for="First name"> First name: </label>
-        <input type="text" id="First name" name="First name" placeholder="enter First name"><br>
+        <input type="text" id="firstname" name="firstname" placeholder="enter First name"><br>
         <br>
         <label for="Last name"> Last name: </label>
-        <input type="password" id="Last name" name="Last name" placeholder="enter Last name"><br>
+        <input type="password" id="lastname" name="lastname" placeholder="enter Last name"><br>
         <br>
         <label for="username"> Username: </label>
-        <input type="text" id="username" name="userpname" placeholder="enter username" required><br>
+        <input type="text" id="username" name="userpname" placeholder="Enter Username" required><br>
         <br>
         <label for="e-mail"> E-mail: </label>
-        <input type="text" id="e-mail" name="e-mail" placeholder="enter e-mail"><br>
+        <input type="text" id="e-mail" name="e-mail" placeholder="Enter E-mail"><br>
         <br>
         <label for="password"> Password: </label>
-        <input type="password" id="password" namee="password" placeholder="enter password" required><br>
+        <input type="password" id="password" namee="password" placeholder="Enter Password" required><br>
         <br>
         <label for="confirm password"> Confirm Password: </label>
-        <input type="confirm password" id="confirm password" namee="confirm password" placeholder="confirm password"><br>
+        <input type="confirm password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password"><br>
         <br>
-        <input type="hidden" name="process" value="1"><br>
+        <br>
+        <label for="confirm title"> Confirm title: </label>
+        <select><!-- <p>this is how you create a window in which you can unfold and click sertain options/p> -->
+            <option value="student">student</option>
+            <option value="teacher">teacher</option>
+            <option value="admin">admin</option>
+        </select>
+        <br>
+        <input type="hidden" name="process" value="1"><br>    <!-- <p>is always unique token "1" to protect from hackers messing with your server and info/p> -->
         <input type="submit" value="REGISTER">
-
+        <br>
+        <br>
+        </fieldset>
     </form>
+    <br>
+    <br>
+    <button>fancy little button</button><!-- <p>neumorphism button generator for styling your buttons in css/p> -->
 </body>
 </html>
