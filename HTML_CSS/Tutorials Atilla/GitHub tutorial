@@ -1,0 +1,23 @@
+Github tutorial 
+1) how to create a repository?
+
+* create a repo in github.com 
+* make a file (README.md)
+*
+
+2) how to clone a repository
+
+* in terminal 
+  git clone (copy paste)repository link from Github
+
+3) how to update a repository
+
+* git add .
+* git commit -m "updated"
+* git push -u origin master
+
+4)
+
+* in repository page go to settings end of the page
+* click 'delete repository'  button
+
