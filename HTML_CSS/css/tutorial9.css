@@ -1,0 +1,60 @@
+@font-face {
+
+    font-family: 'mySpecialfont' ;
+    src: url('https://osl.com/fonts/d-din-bold-webfont.ttf');
+}
+
+h1 {
+    font-family: 'mySpecialfont' ;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2, p {
+    font-family: 'mySpecialfont';
+    text-transform: lowercase;
+    line-height: 2ch;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 3px 5px 3px rgb(110, 100, 237);
+}
+
+p::first-letter {
+
+    font-weight: bolder;
+    color: crimson;
+    font-size: larger;
+}
+
+p::first-line {
+
+    color: darkgreen;
+    font-weight: lighter;
+
+}
+
+div {
+    width: 100%;
+    background-color: orange;
+    padding: 3%;
+    text-align: center;
+    }
+
+ div a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: x-large;
+    }
+
+div a:hover {
+    color: black;
+}
+
+div a:visited {
+    color: darkblue;
+}
+
+div a:active {
+    color: violet;
+}
