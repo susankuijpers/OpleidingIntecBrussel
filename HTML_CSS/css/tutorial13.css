@@ -1,0 +1,24 @@
+/* div#media {
+
+    width: 100px;
+    height: 88vh;
+}
+
+@media screen and (min-width: 950px) {
+    div#media {
+        width: 100px;
+        height: 300px;
+    }
+}
+ */
+
+
+ div#media img {
+     width: 50%;
+ }
+
+ @media screen and (min-width:950px) {
+    div#media img {
+        width: 100%;
+    }
+ }
