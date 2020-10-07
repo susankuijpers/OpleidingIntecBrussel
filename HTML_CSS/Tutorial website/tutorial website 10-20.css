@@ -85,8 +85,9 @@ aside {
 
     margin-left: 15px;
     margin-top: 60px;
+
     float: right;
-    
+    overflow: scroll;
 }
 
 fieldset {
@@ -141,34 +142,134 @@ button {
     margin-left: inherit;
 }
 
-iframe {
 
+/* Tutorial article 11 */
+
+#textbodyandhiding {
     background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow:  10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
-
+    box-shadow: 10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
     border-radius: 20px;
     border-style: none;
-}
 
-video {
+    height: 605px;
+    width: 900px;
 
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow:  10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
+    font-size: medium;
+
+    }
+
+#textbodyandhiding p {
+
+    width: 30rem;
+    height: 5rem;
+    padding: 10px;
+    overflow: scroll;
+
+    margin-right: 130px;
+    margin-left: 130px;
+
     border-radius: 20px;
-    border-style: none;
+
+    background: #ffffff;
+    box-shadow: inset 41px 41px 82px #c9c9c9, 
+                inset -41px -41px 82px #ffffff;
 }
 
-img {
-    background: linear-gradient(145deg, #e6e6e6, #ffffff);
-    box-shadow:  10px 10px 20px #d1d1d1, -10px -10px 20px #ffffff;
-    border-radius: 20px;
-    border-style: none;
-    margin-right: 2rem;
+#textbodyandhiding p#test {
+
+    width: 29%;
+    height: 114px;
+    overflow: scroll;
+
+    border-radius: 20px !important;
+    border-style: dotted;
+    border-color: blue;
+
+    box-shadow: inset 41px 41px 82px #c9c9c9, 
+                inset -41px -41px 82px #ffffff;
 }
 
-div#picassbuttonandlink {
+#textbodyandhiding p#test2 {
 
-    display: inline-flex;
+    width: 29%;
+    height: 55px;
+
+    overflow: scroll;
+    border-style: dotted;
+    border-color: blue;
+
+    border-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRtcVp8V3zk-rzdAiJDURcnnoN8uJkpLq9ZBg&usqp=CAU)11 11 round;
+    border-radius: 20px !important;
+    border-style: none;
+    border-width: 10px;
+
+    -webkit-box-shadow: 8px 7px 23px 3px rgba(0,0,0,0.52); 
+    box-shadow: 8px 7px 23px 3px rgba(0,0,0,0.52);
+}
+
+/* Tutorial article 12 */
+
+#threecolomn {
+
+    column-count: 3;
+    column-rule-style: hidden;
+    column ;
+}
+
+/* Tutorial article 13 */
+
+div#tutorial13 img {
+    width: 50%;
+}
+
+@media screen and (min-width:950px) {
+   div#tutorial13 img {
+       width: 100%;
+   }
+}
+
+/* Tutorial article 14 */
+
+/* WEB/DESKTOP VERSION */
+body {
+    margin:0;
+    top:0;
+    padding:0;
+}
+
+.box {
+ display: flex;
+}
+
+.child {
+
+    background-color: burlywood;
+
+    text-align: center;
+
+    padding: 10px;
+    margin: 1px;
+    width: 100%;
+
+}
+
+
+/* MOBILE VERSION */
+@media only screen and (max-width:768px) {
     
+    body {
+        margin:0;
+        top:0;
+        padding:0;
+    }
+    .mobile{
+        display: block;
+        width: 100%;
+        padding:0;
+        margin:0;
+    }
+    .child {
+        
+        margin:0;
+    }
 }
-
