@@ -1,0 +1,16 @@
+body {
+
+    margin: 0 !important;
+    background-color:white;
+}
+
+.containerfluid {
+    
+    padding: 0 !important;
+}
+
+.row {
+    
+    maring-left: 0 !important;
+    maring-right: 0 !important;
+}
