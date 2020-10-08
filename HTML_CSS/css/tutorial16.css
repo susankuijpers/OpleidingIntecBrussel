@@ -1,0 +1,24 @@
+/* Instert figma objects */
+
+/* grid content */
+
+.gridcontainer {
+
+    padding: 3%;
+    background-color: blue; 
+    display: grid;
+    grid-auto-flow: column;
+
+}
+
+.griditem {
+
+background-color: burlywood;
+margin: 1px;
+padding: 10%;
+}
+
+@madia (max-width: 600px) {
+
+
+}

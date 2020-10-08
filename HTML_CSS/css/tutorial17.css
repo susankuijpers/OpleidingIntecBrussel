@@ -1,0 +1,21 @@
+.grid {
+
+    display: grid;
+    grid-gap: 6px;
+    grid-auto-flow: column;
+    grid-template: repeat(something????);
+}
+
+.product {
+
+    background-color: cadetblue;
+    padding: 10%;
+
+}
+
+/* copy paste someting from mozilla developer... some grid style */
+
+.style {
+
+width: 30px;
+}

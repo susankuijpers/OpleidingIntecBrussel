@@ -1,0 +1,16 @@
+.box {
+
+    padding: 10%;
+    background-color: olive;
+    margin: 1px;
+    font-size: medium;
+    text-align: center;
+    
+
+}
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+}
