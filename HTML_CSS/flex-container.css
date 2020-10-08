@@ -1,0 +1,28 @@
+body{
+    margin:0;
+}
+.row {
+    display:flex;
+    flex-direction: row;
+}
+
+.col {
+    background-color:yellow;
+    width: 100%;
+    padding:20px;
+    margin:1px;
+    text-align: center;
+    font-size: x-large;
+}
+
+@media (max-width:600px){
+    .row{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .col{
+        font-size:xx-large;
+        text-align: center;
+    }
+}
