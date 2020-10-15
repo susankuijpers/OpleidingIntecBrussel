@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <style>
+      .carousel-control-next, .carousel-control-prev{
+        top:25rem !important;
+      }
+      .carousel-indicators{
+        top:50rem !important;
+      }
+    </style>
+  </head>
+  <body>
+
+    <br>
+    <br>
+
+     <!-- Tooltip container: -->
+
+    <div class="container">
+
+      <a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!"
+        >Top TT</a
+      >
+      <a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!"
+        >Bottom TT</a
+      >
+      <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!"
+        >Left TT</a
+      >
+      <a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!"
+        >Right TT</a
+      >
+    </div>
+
+    <br>
+    <br>
+    
+    <!-- some container to practice your column sizing etc..? -->
+    <div class="container-fluid">
+      <!-- fluid row container (if there is no content in it yet add padding to your line to make your container visible) -->
+      <div class="row">
+        <div class=" col-md col-lg-12-4 col-sm-8 bg-primary p-5">
+
+
+        <!-- Bootstrap carousel -->
+        <div id="demo" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+    
+          <!-- The slideshow , slider items container-->
+          <div class="container-inner">
+            <!-- try stuff out here with carousel at home -->
+    
+              <div class="carousel-item active">
+    
+                <!-- First carousel item is always active -->
+                <img class="d-block w-100" src="https://www.iberian-escapes.com/images/aveiro.jpg" alt="Aveiro" />
+                <div class="carousel-caption"><!-- caption over your img -->
+                  <h3>Aveiro</h3>
+                  <p>look at those boates!</p>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.inntravel.co.uk/getmedia/d0e3dba6-0acf-48d8-bd35-f899b1be5226/cy-avro6-main?width=1920&height=900&ext=.jpg" alt="" />
+                <div class="carousel-caption"> <!-- caption over your img -->
+                  <h3>Aveiro</h3>
+                  <p>More boats!</p>
+                </div>
+              </div>
+    
+              <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.travel-in-portugal.com/sites/default/files/photos/aveiro-canal_0.jpg" alt="" />
+                <div class="carousel-caption"> <!-- caption over your img -->
+                  <h3>Aveiro </h3>
+                  <p>super cute houses!</p>
+                </div>
+              </div>
+    
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+    
+          </div>
+        </div>
+        </div>
+        <!-- <div class="col-md-4 col-md-4 col-sm-4 bg-danger p-5"></div> -->
+      </div>
+    </div>
+
+
+     <!-- add J quiry to make this bootstrap tooltip function work.. -->
+
+    <script>
+        $(document).ready(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  </body>
+</html>
