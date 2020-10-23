@@ -1,28 +1,163 @@
 header {
 
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: darksalmon;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
 }
 
 nav {
 
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: darksalmon;
 
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+ 
+    box-shadow:  5px 5px 10px #d1d1d1, -5px -5px 10px #d8d8d8;
+}
+
+ul {
+
+    display: inline-flex;
+    list-style: none;
+    color: #e9967a;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+li a{
+
+    margin-right: 1rem;
+    color: darksalmon;
+    font-weight: 700;
+    display: inline;
+}
+
+ul:hover {
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 section {
 
+    font-family: 'Courier New', Courier, monospace;
+    background-color: whitesmoke;
+
+    height: 1300px;
+
+    padding: 100px;
+    padding-bottom: 120px;
+}
+
+h2 {
+    color: darksalmon;
 }
 
 aside {
 
+    border-radius: 15px;
+    background: linear-gradient(145deg, #d2876e, #f9a183);;
+    box-shadow:  5px 5px 10px #d1d1d1, -5px -5px 10px #d8d8d8;
+    border-style: none;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: black;
+
+    height: 350px;
+    width: 20%;
+
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 15px;
+
+    margin-right: 70px;
+    margin-top: 70px;
+
+    float: right;
+}
+
+fieldset {
+
+    border-style: none;
+
+     font-family: 'Courier New', Courier, monospace;
+     text-align: center;
+}
+
+h4 {
+    color: white;
+    font-style: ;
 }
 
 article {
 
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+
+    background-color: darksalmon;
+    padding: 60px;
 }
 
-article {
+iframe {
 
+    background: #e9967a;
+    box-shadow:  20px 20px 60px #c68068, -20px -20px 60px #ffad8c;
+    border-style: none;
 }
 
-footer {
+.tableandgrid {
 
+    background:white;
+    align-content: center !important;
+}
+
+table {
+    border-color: darksalmon;
+    border-radius: 1px;
+    padding: 60px;
+    width: 800px;
+
+    align-content: center;
+
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: darksalmon;
+}
+
+th,td {
+    border:1px dashed darksalmon;
+    padding: 5px;
+}
+
+th {
+    background-color: darksalmon;
+    padding: 5px;
+
+    color: white;
+}
+
+.jumbotron {
+    color: darksalmon;
+    font-weight: lighter;
+    text-align: left;
+} 
+
+div#threecoloum span{
+
+    column-count: 3;
+    column-rule-style: double;
+    color: darksalmon;
+    font-weight: lighter;
+    text-align: left;
 }
