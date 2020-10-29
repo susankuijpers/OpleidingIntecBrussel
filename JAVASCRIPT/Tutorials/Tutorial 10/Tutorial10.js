@@ -50,7 +50,7 @@ function increment(){
     }
 }
 
-//increment button
+//decrement button
 function decrement(){
     if(count <=0){
         console.log(count)
