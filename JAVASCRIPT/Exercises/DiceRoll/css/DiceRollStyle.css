@@ -1,0 +1,31 @@
+.wrapper {
+     width: 70%;
+     margin: auto;
+     text-align: center;
+}
+
+h1 {
+     margin: 20px;
+     font-size: large;  
+
+}
+
+.dice-area1 {
+     margin: 0px 50px;
+     text-align: center;
+     display: inline-block;
+}
+
+.dice-area2 {
+     margin: 0px 50px;
+     text-align: center;
+     display: inline-block;
+}
+
+p {
+     font-size: medium;
+}
+
+img {
+    width: 320px;
+}
