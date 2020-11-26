@@ -145,4 +145,3 @@ htmlElement.forEach(function(button){ // forEach
 console.log(typeof htmlElement)
 
 console.log(htmlElement)
-© 2020 GitHub, Inc.

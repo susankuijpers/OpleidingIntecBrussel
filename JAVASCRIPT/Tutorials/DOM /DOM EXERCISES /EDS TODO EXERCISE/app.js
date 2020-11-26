@@ -3,13 +3,16 @@
 
 //selectors
 
-const todoInput =  document.querySelector('.todo-input')
-const todoButton =  document.querySelector('.todo-button')
-const todoList =  document.querySelector('.todo-list')
+const todoInput =  document.querySelector(".todo-input")
+const todoButton =  document.querySelector(".todo-button")
+const todoList =  document.querySelector(".todo-list")
+
 
 //Event listerners
 
-todoButton.addEventListener('click',addTodo);
+
+todoButton.addEventListener("click",addTodo);
+todoList.addEventListener("click", deleteCheck)
 
 
 //functions
@@ -24,7 +27,7 @@ function addTodo(event){
 
     //create Li
     const newTodo = document.createElement('li');
-    newTodo.innerText = 'hey';
+    newTodo.innerText = todoInput.value;
     newTodo.classList.add('todo-item');
     todoDiv.appendChild(newTodo);
 
@@ -42,6 +45,32 @@ function addTodo(event){
 
     //append to list
     todoList.appendChild(todoDiv);//zie vanboven
+
+    //clear todo input value
+    todoInput.value = "";
+
+}
+
+function deleteCheck(e){
+    const item = e.target;
+
+    //delete your todo with trashcanbutton
+    if(item.classList[0] === "trash-btn"){
+        const todo = item.parentElement;
+        //animation zie ook css
+        todo.classList.add('fall');
+        todo.addEventListener('transitioned', function(){
+            todo.remove();
+        })
+    }
+
+    //check mark button  //DOESNT WORK YET !!!!!!!!!!!!!!!!!!!!!
+    if(item.classList[0] === "complete-btn"){
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
+        console.log(todo);
+
+    }
 }
 
 
