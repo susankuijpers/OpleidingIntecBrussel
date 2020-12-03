@@ -6,19 +6,27 @@ logout > clear sessions
 */
 
 //selectors
-let user = document.querySelector('.display-4 welcomeUser'); 
-let logoutButton  = docuemnt.querySelector('.btn btn-primary btn-lg logout');
+let user = document.querySelector('.welcomeUser'); 
+let getUsername = sessionStorage.getItem('.correctUser')
+let logoutButton = document.querySelector('.logout'.logout)
 
+console.log(getUsername)
+user.innerHtml =`welcome ${getUsername}`
+
+
+/*
 //let newsCard = docuemnt.querySelector('.');  Are these necessary do i need to do something with these ?
 //let commentsCard = docuemnt.querySelector('.');  Are these necessary do i need to do something with these ?
-
 //function
-
 //add username inside curly bracket
-user.textContent = user.textContent.replace('${userInputfield.value}')
+user.textContent = user.textContent.replace(`${userInputfield.value}`)
+*/
+
 
 logoutButton.addEventListener('click', function (event){ //go back to login ...not working yet i think
     window.location.replace("1login.html");
+    sessionStorage.clear(); //remove session
+    document.location='login.html' //redirect page to login
 })
 
 

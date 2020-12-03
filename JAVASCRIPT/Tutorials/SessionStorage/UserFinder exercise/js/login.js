@@ -2,13 +2,13 @@
 
 //selectors
 
-let userInputfield = docuemnt.querySelector('#username');
-let passInputfield = docuemnt.querySelector('#password');
-let loginButton = docuemnt.querySelector('#login');
-let registerButton = docuemnt.querySelector('#register');
+let userInputfield = document.querySelector('#username');
+let passInputfield = document.querySelector('#password');
+let loginButton = document.querySelector('#login');
+let registerButton = document.querySelector('#register');
 
-let correctUsername = windowSessionStorage.getItem('correctUser');
-let correctPassword = windowSessionStorage.getItem('correctPass');
+let correctUsername = sessionStorage.getItem('correctUser');
+let correctPassword = sessionStorage.getItem('correctPass');
 
 //function
 //zoek? user name and password in sessionStorage 
@@ -16,13 +16,13 @@ let correctPassword = windowSessionStorage.getItem('correctPass');
 //loginButton.addEventListener('click', function(e){} 
 
 function login(event){//... this is not working yet
-    event.preventDefault();
-    if (userName.value === correctUsername && passWord.value === correctPassword){
-        window.sessionStorage.setItem('user', userName.value);
-        window.sessionStorage.setItem('pass', passWord.value);
+    console.log(userInputfield.value)
+    console.log(passInputfield.value)
+    if (userInputfield.value === correctUsername && passInputfield.value === correctPassword){
         window.location.replace("4dashboard.html");
     }else {alert("Username and/or password ar wrong. If your not registerd yet, please click register to continue");
     }
+    event.preventDefault();
 }
 
 loginButton.addEventListener('click', login); //... this is not working yet

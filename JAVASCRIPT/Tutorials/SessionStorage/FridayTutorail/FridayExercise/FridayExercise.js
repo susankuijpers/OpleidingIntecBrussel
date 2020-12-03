@@ -1,23 +1,25 @@
 //selectors
 
-let emailInput = docuemnt.querySelector('#exampleInputEmail1');
-let passInput = docuemnt.querySelector('#exampleInputPassword1');
-let submitButton = docuemnt.querySelector('.btn btn-primary');
-let rememberMeBox = docuemnt.querySelector('#exampleCheck1');
+let emailInput = document.querySelector('#exampleInputEmail1');
+let passInput = document.querySelector('#exampleInputPassword1');
+let submitButton = document.querySelector('.btn btn-primary');
+let rememberMeBox = document.querySelector('#exampleCheck1');
 
 //functions
 //submit & save email and pass in sessionstorage
 //check if sessionstorage remember my email & pass
 
-document.getElementsByClassName(".btn btn-primary").addEventListener('click',function(){
+document.getElementsByClassName(".btn btn-primary").addEventListener('click',function(e){
     console.log(emailInput.value)
     console.log(passInput.value)
+    console.log(rememberMeBox.checked) //remember me box checked
     window.sessionStorage.setItem('email', emailInput.value)
     window.sessionStorage.setItem('pass', passInput.value)
+    e.preventDefault();
     ​​​​​​​}​​​​​​​)
 
 //Remember me checkbox
-
+/*
 function rememberMeBox(event){
 if(emailInput.value === 'email' && passInput.value === 'pass'){ 
     return true
@@ -26,7 +28,7 @@ if(emailInput.value === 'email' && passInput.value === 'pass'){
     return false
     }
 }
-
+*/
 
 /*
 function rememberMeBox(){

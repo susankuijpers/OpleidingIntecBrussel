@@ -10,10 +10,10 @@ and redirect to dashboard auto
 
 
 //selectors
-let userInputfield = docuemnt.querySelector('#username');
-let passInputfield = docuemnt.querySelector('#password');
-let registerButton = docuemnt.querySelector('#register');
-let logoutButton = docuemnt.querySelector('#logout');
+let userInputfield = document.querySelector('#username');
+let passInputfield = document.querySelector('#password');
+let registerButton = document.querySelector('#register');
+let logoutButton = document.querySelector('#logout');
 
 //function
 
@@ -22,7 +22,7 @@ function register(event){
     console.log(userInputfield.value);
     console.log(passInputfield.value);
     sessionStorage.setItem(userInputfield.value,passInputfield.value);
-    window.location.replace("dashboard.html");//go to dashboard
+    window.location.replace("4dashboard.html");//go to dashboard
 }
 
 registerButton.addEventListener('click',register)
