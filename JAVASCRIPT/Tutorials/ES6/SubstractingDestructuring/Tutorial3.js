@@ -22,6 +22,8 @@ let [s1,s2,s3]= students;
 console.log(typeof s1)
 console.log(s1)
 
+////////////////////////////////////////////////////////////////
+
 // destructuring with nested arrays
 
 let nestedArray = ['Book1','Book2','Book3',['Book4','Book5','Book6']]

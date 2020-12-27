@@ -7,47 +7,46 @@ let city = document.querySelector('#inputCity') //input city
 let zip = document.querySelector('#inputZip') //input zip
 let submitButton = document.querySelector('#theSubmitButton') //onclick submit button
 
-function submitInfo(event){ 
-    // add all userNames and fullLocaltion to sessionStorage
-    console.log(firstName.value);
-    console.log(lastName.value);
-    console.log(userName.value);
-    console.log(city.value);
-    console.log(zip.value);
-    sessionStorage.setItem(firstName.value,lastName.value,userName.value,city.value,zip.value);
-}
-
-submitButton.addEventListener('click',submitInfo)
-
 //function that needs to become binded with the above input
-const allNames = {
-    getAllNames: function () {
-        const sentence =
+function getAllNames() {
+        let sentence =
         "My name is " +
         this.firstName.value +
         " " +
         this.lastName.value +
         " and I chose " +
         this.UserName.value +
-        " as my username and"
+        " as my username"
       return sentence;
-    }
 }
 
-const fullLocation = {
-    getFullLocation: function () {
-        const sentence =
+function getFullLocation() {
+        let sentence =
         "The place where i work is" +
         this.city.value +
         "and this is the zipcode:" +
         this.zip.value;
       return sentence;
-    }
+}
+
+function submitInfo(event){
+  let allNames = {
+    firstName: firstName.value,
+    lastName: lastName.value,
+    userName: userName.value,
+  }
+  let fullLocation = {
+    city: city.value,
+    zip: zip.value
+  }
 }
 
 // the actual binding
-const getFullSentence = allNames.getAllNames.bind(getAllNames);
-const getFullSentencetwo = fullLocation.getFullLocation.bind(getFullLocation);
+let getFullSentence = getAllNames.getAllNames.bind(getAllNames);
+let getFullSentencetwo = getFullLocation.getFullLocation.bind(getFullLocation);
 
+sessionStorage.setItem(firstName.value, lastName.value, userName.value, city.value, zip.value)
 console.log(getFullSentence())
 console.log(getFullSentencetwo())
+
+submitButton.addEventListener('click', submitInfo)
