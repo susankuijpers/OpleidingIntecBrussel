@@ -58,13 +58,13 @@ a {
 
 li a:hover {
 
-    color: rgb(255, 174, 173);
+    color: rgb(255, 238, 0);
     text-decoration: none;
 }
 
 li a:active {
 
-    color: rgb(0, 4, 255);
+    color: rgb(96, 29, 253);
     text-decoration: none;
 }
 
@@ -84,7 +84,7 @@ li a, .dropbtn {
   .dropdown-content { /* box styling */
     display: none;
     position: absolute;
-    background-color:white;
+    background-color: #f9f9f9;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
@@ -152,30 +152,19 @@ hr {
   .row {
     display: flex;
     flex-wrap: wrap;
+    padding: 4px;
   }
   
   .column {
     flex: 33.33%;
     max-width: 33.33%;
+    padding: 0 4px;
   }
   
-  .column a img {
-    padding: 14px;
+  .column img {
+    margin-top: 8px;
     vertical-align: middle;
   }
-
-  .column a img:hover {
-    padding: 14px;
-    vertical-align: middle;
-    /* ADD MORE STYLING */
-  }
-
-  .column a img:active {
-    padding: 14px;
-    vertical-align: middle;
-    /* ADD MORE STYLING */
-  }
-
   
   /* responsive side */ 
   /* tablet format? */
