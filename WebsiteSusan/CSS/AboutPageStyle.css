@@ -1,10 +1,9 @@
 /* navbar */ /* make responsive*/
-
 nav {
     text-align: left;
     text-decoration: none;
     font-size: larger;
-    font-weight: bolder;
+    font-weight: bold;
     font-family: poppins, sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -21,7 +20,7 @@ nav {
 
 nav li a.studionaam {
   font-family: poppins, sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-style: normal;
   font-size: x-large;
 }
@@ -122,33 +121,7 @@ h4 {
   color: white;
 }
 
-/* my photo grid thingy */ 
 
-  div.Portfolio{
-    box-sizing: border-box;
-    padding-right: 410px;
-    padding-left: 410px;
-    padding-top: 10px;
-    padding-bottom: 200px;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px;
-  }
-  
-  .column {
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  
   /* responsive side */ 
   /* tablet format? */
   @media screen and (max-width: 800px) {
@@ -206,65 +179,8 @@ div.contact{
   padding-left: 410px;
   padding-top: 20px;
   padding-bottom: 100px;
-}
 
-/* COPIED CSS*/
-
-    a {
-      text-decoration: none !important;
-      width: 60px;
-      height: 60px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50px;
-      margin-right: 20px;
-      font-size: 25px;
-      overflow: hidden;
-      position: relative;
-      color: black; /*or change to your own color*/
-      border: 2px solid black; /*or change to your own color*/
-      }
-
-    i {
-        position: relative;
-        z-index: 3;
-      }
-      
-    :last-child {
-        margin-right: 0px;
-      }
-      
-    :before {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-      }
-      
-    i {
-        display: inline-block;
-        vertical-align: middle;
-      }
-
-
-  
-    a .effect.thurio :hover{
-      transition: border-radius 0.2s linear 0s;
-      transform: rotate(45deg);
-    }
-    i .effect.thurio :hover{
-      transition: transform 0.01s linear 0s;
-      transform: rotate(-45deg);
-    }
-      
-    .effect.thurio :hover {
-      border-radius: 0px;
-    }
-/* COPIED CSS*/  
-  
-/* footer */ 
-
+}/* footer */
 footer {
 
     text-align: center;
