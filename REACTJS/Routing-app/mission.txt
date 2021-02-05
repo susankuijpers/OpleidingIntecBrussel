@@ -1,0 +1,4 @@
+It's self study. You should make an app with react-router-dom and paste it in the code-sharing channel. I'll give feedback. 
+!!!! Not only routing. Pass data and component in router.. Dont keep it too simple
+
+https://reactrouter.com/web/guides/quick-start

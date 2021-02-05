@@ -1,0 +1,22 @@
+Start een react app in visual studio code:
+
+1) open globaal de integrated terminal.
+
+2) typ : npx create-react-app new-app 
+om een nieuwe app te maken.
+
+3) in de folder 'src'(van je nieuwe app).
+verwijder alle overbodige files behalve 'index.js'
+
+4) als je met bootstrap werkt in react
+-> installeer dan reactstrap in de terminal.
+(zie voor alle stappen : reactstrap.github.io).
+
+5) na al die stappen , import de bootstrap in je 'index.js' file.
+
+6) maak in je 'src' folder ook een 'App.js' file.
+en maak een standaard component aan met de snippet shortcut: rcc
+type in de <div> 'hello world'.
+
+7) check in de server of alles werkt (http://localhost:3000)
+8) zoja plaats de bootstrap elementen in je app die je nodig hebt en go!

@@ -1,0 +1,1 @@
+json-server data/db.json -p 8000 & npm start
