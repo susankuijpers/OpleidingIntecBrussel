@@ -1,256 +1,176 @@
 /*Home*/
 /*
-header {
+/* navbar */
+/* make responsive*/
 
-    padding-left: 15px;
-    padding-top: 50px;
-    padding-right: 15px;
-    padding-bottom: 50px;
-
-    text-align: left;
-}
-*/
-
-/* navbar */ /* make responsive*/
 
 nav {
-    text-align: left;
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bolder;
-    font-family: poppins, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
-    padding-left: 320px;
-    padding-top: 25px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-
-    box-shadow:  5px 5px 10px #d1d1d1, -5px -5px 10px #d8d8d8;
+  display: inline;
+  font: normal normal normal 35px/42px Rollgates Fabulous;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 nav li a.studionaam {
-  font-family: poppins, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: xx-large;
+  text-align: left;
+  display: inline;
+  align-self: left;
+  font: normal normal normal 45px/54px Rollgates Fabulous;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
-/* Put in NL and ENG language buttons */
-
 ul {
-    position: -webkit-sticky; /* werkt nog niet !!!!!!!!!!*/
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 li {
-    display: inline; 
+  display: inline;
+  text-align: right;
 }
 
 
 a {
-    color: black;
-    margin-right: 2rem;
-    margin-left: 2rem;
+  color: black;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 li a:hover {
 
-    color: rgb(255, 174, 173);
-    text-decoration: none;
+  color: rgb(0, 4, 255);
+  text-decoration: none;
 }
 
 li a:active {
 
-    color: rgb(0, 4, 255);
-    text-decoration: none;
+  color: rgb(176, 72, 255);
+  text-decoration: none;
 }
 
 /* dropdown */
 
-li a, .dropbtn {
-    display: inline-block;
-    text-align: left;
-    padding: 8px;
-    text-decoration: none;
-  }
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content { /* box styling */
-    display: none;
-    position: absolute;
-    background-color:white;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding-left: auto;
-    padding-right: auto;
-    display: block;
+li a,
+.dropbtn {
+  display: inline-block;
+  padding: 1px;
+  text-decoration: none;
+}
 
-    text-decoration: none;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+li.dropdown {
+  display: inline-block;
+}
 
-/* section */ /* make responsive*/
+.dropdown-content {
+  /* box styling */
+  display: none;
+  position: absolute;
+  background-color: white;
+
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding-left: auto;
+  padding-right: auto;
+  display: block;
+
+  font: Rollgates Fabulous !important;
+  font-size: 20px !important;;
+
+  text-decoration: none;
+  text-align: right;
+  align-items: right;
+  align-self: right !important;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* section */
 
 div p.introduction {
-    text-align: center;
-    font-size: medium;
-    font-weight: bolder;
-    font-family: poppins, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    color: black;
+  text-align: center;
+  font-size: medium;
+  font-weight: bolder;
+  font-family: poppins, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: black;
 
-    padding: 80px;
-    padding-bottom: 50px;
-    text-align: center !important;
+  padding: 80px;
+  padding-bottom: 50px;
+  text-align: center !important;
 }
 
 h4 {
   text-align: center;
-  font-size: large;
-  font-weight: bolder;
-  font-family: poppins, sans-serif;
-  font-weight: 700;
   font-style: normal;
-  color: black;
+  font: normal normal normal 25px/30px Rollgates Fabulous;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
-hr {
-  color: teal;
-  border-style: solid;
-  border-width: 1px;
-  margin-left: 60px;
-  margin-right: 60px;
+
+/* my photo grid thingy */
+
+.column a img {
+
+  box-shadow: 0px 3px 9px #0000000D;
+  opacity: 1;
 }
 
-/* my photo grid thingy */ 
+.column a img:hover {
 
-  div.Portfolio{
-    box-sizing: border-box;
-    padding-right: 410px;
-    padding-left: 410px;
-    padding-top: 10px;
-    padding-bottom: 200px;
-  }
+}
+.column a img:active {
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
+}
+
+/* RESPONSIVE SIDE !!!! */
+/* tablet format? */
+@media screen and (max-width: 800px) {
   .column {
-    flex: 33.33%;
-    max-width: 33.33%;
+    flex: 50%;
+    max-width: 50%;
   }
-  
-  .column a img {
-    padding: 14px;
-    vertical-align: middle;
+}
+/* gsm format? */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
-
-  .column a img:hover {
-    padding: 14px;
-    vertical-align: middle;
-    /* ADD MORE STYLING */
-  }
-
-  .column a img:active {
-    padding: 14px;
-    vertical-align: middle;
-    /* ADD MORE STYLING */
-  }
-
-  
-  /* responsive side */ 
-  /* tablet format? */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  /* gsm format? */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
-
-/* About */ 
-
-div.about{
-  box-sizing: border-box;
-
-  text-align: center;
-  font-size: medium;
-  font-weight: bolder;
-  font-family: poppins, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: black;
-
-  padding-right: 900px;
-  padding-left: 900px;
-  padding-top: 80px;
-  padding-bottom: 20px;
 }
 
-/* contact */ 
-
-div.contact{
-  box-sizing: border-box;
-
-  text-align: center;
-  font-size: medium;
-  font-weight: bolder;
-  font-family: poppins, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: black;
-
-  padding-right: 410px;
-  padding-left: 410px;
-  padding-top: 20px;
-  padding-bottom: 100px;
-}
-
-/* footer */ 
+/* FOOTER */
 
 footer {
 
-    text-align: center;
-    text-decoration: none;
-    font-size: smaller;
-    font-weight: bolder;
-    font-family: poppins, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: black;
+  text-align: left;
+  text-decoration: none;
+  font-size: smaller;
+  font-weight: bolder;
+  font-family: poppins, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: black;
 
-    padding-left: 15px;
-    padding-top: 25px;
-    padding-right: 15px;
-    padding-bottom: 25px;
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-right: 15px;
+  padding-bottom: 25px;
 
-    background-color: white;
-
-    box-shadow:  5px 5px 10px #d1d1d1, -5px -5px 10px #d8d8d8;
+  background-color: white;
 }

@@ -1,171 +1,206 @@
-/*Home*/
-/*
-header {
+/*GENERAL PORTFOLIO STYLING*/
 
-    padding-left: 15px;
-    padding-top: 50px;
-    padding-right: 15px;
-    padding-bottom: 50px;
-
-    text-align: left;
-}
-*/
-
-/* navbar */ /* make responsive*/
+/* navbar */
 
 nav {
-    text-align: left;
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bolder;
-    font-family: poppins, sans-serif;
-    font-weight: 300;
-    font-style: normal;
-
-    padding-left: 320px;
-    padding-top: 25px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-
-    box-shadow:  5px 5px 10px #d1d1d1, -5px -5px 10px #d8d8d8;
+  display: inline;
+  font: normal normal normal 35px/42px Rollgates Fabulous;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 nav li a.studionaam {
-  font-family: poppins, sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: x-large;
+  text-align: left;
+  display: inline;
+  align-self: left;
+  font: normal normal normal 45px/54px Rollgates Fabulous;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
-/* Put in NL and ENG language buttons */
-
 ul {
-    position: -webkit-sticky; /* werkt nog niet !!!!!!!!!!*/
-    position: sticky;
-    top: 0;
+  position: sticky;
+  top: 0;
 }
 
 li {
-    display: inline; 
+  display: inline;
+  text-align: right;
 }
 
 
 a {
-    color: black;
-    margin-right: 2rem;
-    margin-left: 2rem;
+  color: black;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 li a:hover {
 
-    color: rgb(255, 238, 0);
-    text-decoration: none;
+  color: rgb(0, 4, 255);
+  text-decoration: none;
 }
 
 li a:active {
 
-    color: rgb(96, 29, 253);
-    text-decoration: none;
+  color: rgb(176, 72, 255);
+  text-decoration: none;
 }
 
 /* dropdown */
 
-li a, .dropbtn {
-    display: inline-block;
-    text-align: left;
-    padding: 8px;
-    text-decoration: none;
-  }
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content { /* box styling */
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding-left: auto;
-    padding-right: auto;
-    display: block;
-
-    text-decoration: none;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-/* section */ /* make responsive*/
-
-div p.introduction {
-    text-align: center;
-    font-size: medium;
-    font-weight: bolder;
-    font-family: poppins, sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    color: black;
-
-    padding: 80px;
-    padding-bottom: 50px;
-    text-align: center !important;
+li a,
+.dropbtn {
+  display: inline-block;
+  padding: 1px;
+  text-decoration: none;
 }
 
-h4 {
-  text-align: center;
-  font-size: large;
-  font-weight: bolder;
-  font-family: poppins, sans-serif;
-  font-weight: 700;
-  font-style: normal;
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  /* box styling */
+  display: none;
+  position: absolute;
+  background-color:none;
+
+  z-index: 1;
+}
+
+.dropdown-content a {
   color: black;
+  padding-left: auto;
+  padding-right: auto;
+  display: block;
+
+  font: Rollgates Fabulous !important;
+  font-size: 20px !important;;
+
+  text-decoration: none;
+  text-align: right;
+  align-items: right;
+  align-self: right !important;
 }
 
-hr {
-  color: teal;
-  border-style: solid;
-  border-width: 1px;
-  margin-left: 60px;
-  margin-right: 60px;
+.dropdown-content a:hover {
+  background-color: none;
 }
 
-/* my photo grid thingy */ 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-  div.Portfolio{
-    box-sizing: border-box;
-    padding-right: 410px;
-    padding-left: 410px;
-    padding-top: 10px;
-    padding-bottom: 200px;
-  }
 
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4px;
-  }
+/* Logo hoofding */
+
+.container{
+  background-color: white;
+  height: 979px;
+  padding: none;
+  justify-content: center !important;
+  align-content: center !important;
+  align-self: center;
+  align-items: center;
+  padding: none;
+}
+
+.logo{
+  height: 572px;
+  width: 572px !important;
+margin-right: 50px;
+margin-left: 50px;
+  text-align: center;
+}
+
+/* intro container */
+
+.containerintro {
+  background-color: #CE666F;
+  justify-content: center !important;
+  align-content: center !important;
+  align-self: center;
+  align-items: center;
+}
+
+.text {
+width: 1076px;
+height: 192px;
+line-height: 18px;
+justify-content: center !important;
+align-content: center !important;
+align-self: center;
+align-items: center;
+}
+
+/*titel*/
+h1 {
+  font: Rollgates Fabulous;
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: white;
+  opacity: 1;
+
+  text-align: center;
+  font-style: normal;
+}
+/*ondertitel*/
+h3 {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: poppins, sans-serif;
+  color: white;
+  letter-spacing: 0px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*gewone tekst*/
+p {
+  font-weight: thin;
+  font-family: poppins, sans-serif;
+  font-size: 9px;
+  color: white;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*branding gallery*/
+
+.row1 img {
+
+  align-self: center !important;
+  align-content: center;
+  align-items: center;
   
-  .column {
-    flex: 33.33%;
-    max-width: 33.33%;
-    padding: 0 4px;
-  }
+  height: 648px !important;
+}
+
+/*company fashion text*/
+
+.text2 h1{
+  color: #CE666F;
+}
+
+.text2 p {
+  font-weight: thin;
+  font-family: poppins, sans-serif;
+  font-size: 9px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  width: 1076px;
+height: 192px;
   
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  
+}
+
+
+/**/
+
   /* responsive side */ 
   /* tablet format? */
   @media screen and (max-width: 800px) {
@@ -182,44 +217,6 @@ hr {
       max-width: 100%;
     }
   }
-
-/* About */ 
-
-div.about{
-  box-sizing: border-box;
-
-  text-align: center;
-  font-size: medium;
-  font-weight: bolder;
-  font-family: poppins, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: black;
-
-  padding-right: 900px;
-  padding-left: 900px;
-  padding-top: 80px;
-  padding-bottom: 20px;
-}
-
-/* contact */ 
-
-div.contact{
-  box-sizing: border-box;
-
-  text-align: center;
-  font-size: medium;
-  font-weight: bolder;
-  font-family: poppins, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-  color: black;
-
-  padding-right: 410px;
-  padding-left: 410px;
-  padding-top: 20px;
-  padding-bottom: 100px;
-}
 
 /* footer */ 
 
