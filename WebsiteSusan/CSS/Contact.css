@@ -1,37 +1,31 @@
-/* navbar */ /* make responsive*/
+/* navbar */
 
 nav {
-  text-align: left;
-  text-decoration: none;
-  font-size: larger;
-  font-weight: bolder;
-  font-family: poppins, sans-serif;
-  font-weight: 300;
-  font-style: normal;
-
-  padding-left: 320px;
-  padding-top: 25px;
-  padding-right: 15px;
-  padding-bottom: 15px;
+  display: inline;
+  font: normal normal normal 35px/42px Rollgates Fabulous;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 nav li a.studionaam {
-font-family: poppins, sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: xx-large;
+  text-align: left;
+  display: inline;
+  align-self: left;
+  font: normal normal normal 45px/54px Rollgates Fabulous;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
-/* Put in NL and ENG language buttons */
-
 ul {
-  position: -webkit-sticky; /* werkt nog niet !!!!!!!!!!*/
   position: sticky;
   top: 0;
 }
 
 li {
-  display: inline; 
+  display: inline;
+  text-align: right;
 }
 
 
@@ -43,22 +37,22 @@ a {
 
 li a:hover {
 
-  color: rgb(255, 174, 173);
+  color: rgb(0, 4, 255);
   text-decoration: none;
 }
 
 li a:active {
 
-  color: rgb(0, 4, 255);
+  color: rgb(0, 3, 205);
   text-decoration: none;
 }
 
 /* dropdown */
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
-  text-align: left;
-  padding: 8px;
+  padding: 1px;
   text-decoration: none;
 }
 
@@ -66,11 +60,12 @@ li.dropdown {
   display: inline-block;
 }
 
-.dropdown-content { /* box styling */
+.dropdown-content {
+  /* box styling */
   display: none;
   position: absolute;
-  background-color:white;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color:none;
+
   z-index: 1;
 }
 
@@ -80,14 +75,53 @@ li.dropdown {
   padding-right: auto;
   display: block;
 
+  font: Rollgates Fabulous !important;
+  font-size: 20px !important;;
+
   text-decoration: none;
-  text-align: left;
+  text-align: right;
+  align-items: right;
+  align-self: right !important;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+  background-color: none;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* intro container */
+
+.containerintro {
+  background-color: #CE666F;
+  justify-content: center !important;
+  align-content: center !important;
+  align-self: center;
+  align-items: center;
+}
+
+.text {
+width: 1076px;
+height: 192px;
+line-height: 18px;
+justify-content: center !important;
+align-content: center !important;
+align-self: center;
+align-items: center;
+}
+
+/*titel*/
+h1 {
+  font-family: Rollgates Fabulous;
+  font-size: 50px;
+  letter-spacing: 0px;
+  color: black;
+  opacity: 1;
+
+  text-align: center;
+  font-style: normal;
 }
 
 /* section */ /* make responsive*/
@@ -104,6 +138,7 @@ div p.introduction {
   padding: 80px;
   padding-bottom: 50px;
   text-align: center !important;
+  width: 50%;
 }
 
 h4 {
@@ -114,14 +149,6 @@ font-family: poppins, sans-serif;
 font-weight: 700;
 font-style: normal;
 color: black;
-}
-
-hr {
-color: teal;
-border-style: solid;
-border-width: 1px;
-margin-left: 60px;
-margin-right: 60px;
 }
 
 /* About */ 
@@ -137,11 +164,20 @@ div.about{
   font-style: normal;
   color: black;
 
-  padding-right: 900px;
-  padding-left: 900px;
-  padding-top: 80px;
+  padding-right: 410px;
+  padding-left: 410px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
+
+/*
+  box-sizing: border-box;
+  text-align: center;
+  padding-right: 410px;
+  padding-left: 410px;
+  padding-top: 100px;
+  padding-bottom: 20px;
+*/ 
 
 /* contact */ 
 

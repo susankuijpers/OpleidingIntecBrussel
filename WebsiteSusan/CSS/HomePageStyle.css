@@ -47,7 +47,7 @@ li a:hover {
 
 li a:active {
 
-  color: rgb(176, 72, 255);
+  color: rgb(0, 3, 205);
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ li.dropdown {
   /* box styling */
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: none;
 
   z-index: 1;
 }
@@ -89,7 +89,7 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-  background-color: white;
+  background-color:none;
 }
 
 .dropdown:hover .dropdown-content {
