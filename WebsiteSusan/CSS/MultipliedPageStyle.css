@@ -144,7 +144,7 @@ p {
     padding-right: 410px;
     padding-left: 410px;
     padding-top: 25px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
 }
 .logo {
     align-self: center;
@@ -160,7 +160,7 @@ p {
     text-align: center;
     padding-right: 410px;
     padding-left: 410px;
-    padding-top: 80px;
+    padding-top: 90px;
     padding-bottom: 50px;
 }
 /*Posters & flyers*/
@@ -181,8 +181,8 @@ p {
     text-align: left !important;
     padding-right: 410px;
     padding-left: 410px;
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 /*publicatiegallery*/
 .publicatiegallery {

@@ -123,7 +123,7 @@ p {
 /* intro container */
 
 .introdiv {
-  background-color: #CE666F;
+  background-color: #e76b75;
   justify-content: center !important;
   align-content: center !important;
 
@@ -131,8 +131,8 @@ p {
 
   padding-right: 410px;
   padding-left: 410px;
-  padding-top: 40px;
-  padding-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .introdiv h1 {
 color:white;
@@ -158,12 +158,12 @@ grid-template-columns: 1fr 1fr 1fr ;
 .fashiontext {
   padding-right: 410px;
   padding-left: 410px;
-  padding-top: 50px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .fashiontext h1{
-  color: #CE666F;
+  color: #e76b75;
 }
 
 .text2 p {
