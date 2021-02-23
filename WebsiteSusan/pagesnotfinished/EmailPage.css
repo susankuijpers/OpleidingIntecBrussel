@@ -1,22 +1,10 @@
-/* fonts */
-
-@font-face {
-    font-family: Rollgates Fabulous;
-    src: url(Rollgates_Fabulous.otf);
-  }
-  
-  @font-face {
-    font-family: Poppins;
-    src: url(Poppins.otf);
-  }
-
 /* navbar */
 
 nav {
     display: inline;
     font: normal normal normal 35px/42px Rollgates Fabulous;
     letter-spacing: 0px;
-    color: white;
+    color: #000000;
     opacity: 1;
 }
 
@@ -26,13 +14,12 @@ nav li a.studionaam {
     align-self: left;
     font: normal normal normal 45px/54px Rollgates Fabulous;
     letter-spacing: 0px;
-    color: white;
+    color: #000000;
     opacity: 1;
 }
 
 ul {
     position: sticky;
-
     top: 0;
 }
 
@@ -43,7 +30,7 @@ li {
 
 
 a {
-    color: white;
+    color: black;
     margin-right: 2rem;
     margin-left: 2rem;
 }
@@ -71,20 +58,19 @@ li a,
 
 li.dropdown {
     display: inline-block;
-    background-color: none !important;
 }
 
 .dropdown-content {
     /* box styling */
     display: none;
     position: absolute;
-    background-color: none !important;
+    background-color: none;
 
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: white;
+    color: black;
     padding-left: auto;
     padding-right: auto;
     display: block;
@@ -100,128 +86,70 @@ li.dropdown {
 }
 
 .dropdown-content a:hover {
-    background-color: none !important;
+    background-color: none;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-/*titel*/
+/* email contact form */
+
 h1 {
     font-family: Rollgates Fabulous;
     font-size: 50px;
     letter-spacing: 0px;
-    color: #0B4439;
+    color: black;
     opacity: 1;
 
     text-align: center;
     font-style: normal;
 }
 
-/*ondertitel*/
-h3 {
-    font-size: 12px;
-    font-weight: bold;
-    font-family: poppins, sans-serif;
-    letter-spacing: 0px;
-    color: #0B4439;
-    text-align: center;
-}
-
-/*gewone tekst*/
 p {
     font-weight: thin;
     font-family: poppins, sans-serif;
-    font-size: 9px;
+    font-size: 12px;
     line-height: 18px;
     color: black;
     text-align: center;
 }
-/*branding div*/
-.branddiv {
+#contact-form {
     box-sizing: border-box;
-    text-align: center;
-    padding-right: 410px;
-    padding-left: 410px;
-    padding-top: 60px;
+
+    padding-top: 20px;
     padding-bottom: 100px;
+
+    text-align: center !important;
+
 }
 
+label {
+    font-weight: thin;
+    font-family: poppins, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: black;
 
-/*fashiondiv*/
-.fashiontext{
-    box-sizing: border-box;
-    text-align: center;
-    padding-right: 410px;
-    padding-left: 410px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-.branddesignimg{
-    width: 678px;
-    height: 452px;
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
-.floatybibapron {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 200px;
-    padding-right: 50px;
-}
-.floatyhemd {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    text-align: center !important;
 }
 
-
-/*merch header*/
-
-.merchheader {
-    background-color: #1A4A45;
+input {
+    height: 25px ;
+    width: 400px ;
+    
+    border: none;
+    border-radius: 6px;
+    background: #ffffff;
+    box-shadow:  5px 5px 10px #d9d9d9,
+                 -5px -5px 10px #ffffff;
 }
-.merchheader h1 {
-    color: white;
-}
-.merchheader p {
-    color: white;
-    padding-bottom: 90px;
-}
-
-/*merchgallery*/
-
-.merchgallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.merchgallery img {
-    width: 100%;
-}
-
-/**/
-
-/* responsive side */
-/* tablet format? */
-@media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* gsm format? */
-@media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
-}
-
 /* footer */
 
 footer {
+    position: sticky;
+    align-self: baseline;
+    bottom: 0;
 
     text-align: left;
     text-decoration: none;
@@ -230,14 +158,12 @@ footer {
     font-family: poppins, sans-serif;
     font-weight: 300;
     font-style: normal;
-    color: white;
+    color: black;
 
     padding-left: 15px;
     padding-top: 25px;
     padding-right: 15px;
     padding-bottom: 25px;
 
-    background-color: #0B4439;;
-
-    box-shadow: 5px 5px 10px #d1d1d1, -5px -5px 10px #d8d8d8;
+    background-color: white;
 }

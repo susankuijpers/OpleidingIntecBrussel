@@ -1,3 +1,15 @@
+/* fonts */
+
+@font-face {
+  font-family: Rollgates Fabulous;
+  src: url(Rollgates_Fabulous.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins.otf);
+}
+
 /* navbar */
 
 nav {

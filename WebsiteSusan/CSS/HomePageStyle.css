@@ -1,8 +1,16 @@
-/*Home*/
-/*
-/* navbar */
-/* make responsive*/
+/* fonts */
 
+@font-face {
+  font-family: Rollgates Fabulous;
+  src: url(Rollgates_Fabulous.otf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(Poppins.otf);
+}
+
+/* navbar */
 
 nav {
   display: inline;
@@ -129,13 +137,6 @@ h4 {
 
   box-shadow: 0px 3px 9px #0000000D;
   opacity: 1;
-}
-
-.column a img:hover {
-
-}
-.column a img:active {
-
 }
 
 /* RESPONSIVE SIDE !!!! */
