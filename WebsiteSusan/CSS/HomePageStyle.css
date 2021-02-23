@@ -116,7 +116,6 @@ div p.introduction {
   font-style: normal;
   color: black;
 
-  padding: 80px;
   padding-bottom: 50px;
   text-align: center !important;
 }
@@ -132,6 +131,11 @@ h4 {
 
 
 /* my photo grid thingy */
+
+.container {
+  align-self: center !important;
+  justify-content: center !important;
+}
 
 .column a img {
 

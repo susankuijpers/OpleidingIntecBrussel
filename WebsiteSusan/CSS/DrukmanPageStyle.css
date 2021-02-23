@@ -45,6 +45,8 @@ nav {
     color: white;
     margin-right: 2rem;
     margin-left: 2rem;
+
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3), -2px 4px 7px rgba(3,42,81,0.28);
   }
   
   li a:hover {

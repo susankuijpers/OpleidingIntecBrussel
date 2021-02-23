@@ -141,8 +141,8 @@ p {
 
   padding-right: 410px;
   padding-left: 410px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 .introdiv h1 {
 color:white;
@@ -168,8 +168,8 @@ grid-template-columns: 1fr 1fr 1fr ;
 .fashiontext {
   padding-right: 410px;
   padding-left: 410px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 150px;
+  padding-bottom: 150px;
 }
 
 .fashiontext h1{
@@ -241,6 +241,4 @@ footer {
     padding-bottom: 25px;
 
     background-color: white;
-
-    box-shadow:  5px 5px 10px #d1d1d1, -5px -5px 10px #d8d8d8;
 }

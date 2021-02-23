@@ -208,6 +208,9 @@ font-family: poppins, sans-serif;
 font-weight: 300;
 font-style: normal;
 color: rgb(0, 3, 205);
+
+margin-right: 0rem;
+margin-left: 0rem;
 }
 
 .contact a:hover {

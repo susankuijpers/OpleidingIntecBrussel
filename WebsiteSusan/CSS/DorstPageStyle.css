@@ -18,6 +18,8 @@ nav {
     letter-spacing: 0px;
     color: white;
     opacity: 1;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3), -2px 4px 7px rgba(11,68,57,0.28);
+    
 }
 
 nav li a.studionaam {
